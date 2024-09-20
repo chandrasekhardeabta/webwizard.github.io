@@ -1,0 +1,181 @@
+main{
+    &.main{
+        .hero-sec{
+            background-color: var(--dark-color);
+            padding: 120px 0 0 0;
+            position: relative;
+            overflow: hidden;
+            background-image: url('../img/hero/hero-bg.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            canvas{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 0;
+            }
+            .hero-container{
+                #hero-content{
+                    .hero-title{
+                        font-size: 62px;
+                        color: var(--white-color);
+                    }
+                }
+                .hero-right-sec{
+                    height: 82vh;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        &.hero-img{
+                            position: absolute;
+                            width: 100%;
+                            max-width: 100%;
+                            height: auto;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            z-index: 2;
+                        }
+                    }
+                }
+                #hero-animation{
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 480px;
+                    height: 480px;
+                    /* border: 1px solid wheat; */
+                    transition: 0.5s ease;
+                    transform-style: preserve-3d;
+                    user-select: none;
+                    cursor: crosshair;
+                    z-index: 1;
+                    &:hover{
+                        transform: rotateX(45deg) rotateY(-30deg) scale(1.3);
+                        .r02{
+                            transform: translateZ(50px);
+                        }
+                        .r04, .r051, .r052{
+                            transform: translateZ(50px);
+                        }
+                        .r08, .r09{
+                            transform: translateZ(120px);
+                        }
+                    }
+                    .ring{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        mask: radial-gradient(#0000 var(--i), #000 var(--i), #000 var(--o), #0000 var(--o));
+                        transition: 0.3s;
+                        &.r{
+                            &01{
+                                background: conic-gradient(rgba(var(--white), 0.4) 100%, #0000 100%) ;
+                                --i: 70%;
+                                --o: 71%;
+                            }
+                            &02{
+                                background: conic-gradient(
+                                    rgba(var(--white), 1) 05%, #0000 05%, #0000 9% , rgba(var(--white), 1) 09%,
+                                    rgba(var(--white), 1) 20%, #0000 20%, #0000 25% , rgba(var(--white), 1) 25%,
+                                    rgba(var(--white), 1) 37%, #0000 37%, #0000 42% , rgba(var(--white), 1) 42%,
+                                    rgba(var(--white), 1) 49%, #0000 49%, #0000 55% , rgba(var(--white), 1) 55%,
+                                    rgba(var(--white), 1) 65%, #0000 65%, #0000 72% , rgba(var(--white), 1) 72%,
+                                    rgba(var(--white), 1) 80%, #0000 80%, #0000 86% , rgba(var(--white), 1) 86%,
+                                    rgba(var(--white), 1) 95%, #0000 95%
+                                    ) ;
+                                --i: 57%;
+                                --o: 60%;
+
+                                animation: anime 7s ease-in-out infinite alternate;
+                            }
+                            &03{
+                                //background: conic-gradient(#ffd000 85%, #0000 85%) ;
+                                background: linear-gradient(to right, #fc226a 0%, #8c52ff 100%);
+                                --i: 50%;
+                                --o: 50.7%;
+
+                                animation: anime 3s ease-in-out infinite alternate;
+                            }
+                            &04{
+                                background: conic-gradient(
+                                #0000 35%, rgba(var(--white), 1) 35%,
+                                rgba(var(--white), 1) 40%, #0000 40%,
+
+                                #0000 67%, rgba(var(--white), 1) 67%,
+                                rgba(var(--white), 1) 71%, #0000 71%
+                                ) ;
+                                --i: 40%;
+                                --o: 44%;
+
+                                animation: anime 4s ease-in-out infinite alternate;
+                            }
+                            &051{
+                                background: conic-gradient(
+                                #0000 20%, rgba(var(--white), 1) 20%, rgba(var(--white), 1) 40%, #0000 40%,
+                            
+                                #0000 67%, rgba(var(--white), 1) 67%, rgba(var(--white), 1) 85%, #0000 85%
+                                ) ;
+                                --i: 39.5%;
+                                --o: 40%;
+
+                                animation: anime 4s ease-in-out infinite alternate;
+                            }
+                            &052{
+                                background: conic-gradient(
+                                #0000 20%, rgba(var(--white), 1) 20%, rgba(var(--white), 1) 40%, #0000 40%,
+                            
+                                #0000 67%, rgba(var(--white), 1) 67%, rgba(var(--white), 1) 85%, #0000 85%
+                                ) ;
+                                --i: 37.5%;
+                                --o: 38%;
+
+                                animation: anime 4s ease-in-out infinite alternate;
+                            }
+                            &06{
+                                background: conic-gradient(
+                                #0000 20%, rgba(var(--white), 1) 20%, rgba(var(--white), 1) 35%, #0000 35%,
+                            
+                                #0000 67%, rgba(var(--white), 1) 67%, rgba(var(--white), 1) 95%, #0000 95%
+                                ) ;
+                                --i: 30%;
+                                --o: 30.5%;
+
+                                animation: anime 2s ease-in-out infinite alternate;
+                            }
+                            &07{
+                                background: conic-gradient(rgba(var(--white), 1) 100%, #0000 100%) ;
+                                --i: 16%;
+                                --o: 17.3%;
+                            }
+                            &08{
+                                //background: conic-gradient(#ffd000 75%, #0000 75%) ;
+                                background: linear-gradient(to right, #fc226a 0%, #8c52ff 100%);
+                                --i: 10%;
+                                --o: 11%;
+                                animation: anime 5s ease-in-out infinite alternate;
+                            }
+                            &09{
+                                background: conic-gradient(rgba(var(--white), 1) 100%, #0000 100%) ;
+                                --i: 3%;
+                                --o: 3.4%;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes anime {
+    to {
+        rotate: 360deg;
+    }
+}

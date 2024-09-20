@@ -1,0 +1,87 @@
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: rgba(var(--white), 0.1);
+    border-bottom: 1px solid rgba(var(--white), 0.1);
+    .main-navigation{
+        nav{
+            &.fixed-top{
+                .navbar-nav{
+                    li{
+                        a{
+                            color: var(--dark-color);
+                        }
+                    }
+                }
+            }
+            .navbar-nav{
+                li{
+                    a{
+                        color: var(--white-color);
+                    }
+                }
+            }
+        }
+    }
+    &#pageHeader{
+        //background-color: var(--white-color);
+        //background: linear-gradient(to right, #fc226a 0%, #8c52ff 100%);
+        .headertop{
+            position: relative;
+            padding: 14px 0;
+            z-index: 5;
+            ul{
+                list-style-type: none;
+                color: var(--white-color);
+                li{
+                    display: inline-block;
+                    padding-right: 18px;
+                    i{
+                        padding-right: 8px
+                    }
+                }
+            }
+            .header-top-social{
+                color: var(--white-color);
+                a{
+                    text-decoration: none;
+                    color: var(--white-color);
+                }
+            }
+        }
+        .mainNav{
+            nav{
+                background: 0 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                z-index: 4;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: calc(100% - 200px);
+                    height: 100%;
+                    background: var(--white-color);
+                }
+                ul{
+                    li{
+                        a{
+                            &.nav-link{
+                                margin-right: 25px;
+                                padding: 25px 0;
+                                font-size: 17px;
+                                font-weight: 500;
+                                color: var(--dark-color);
+                                text-transform: capitalize;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+// Apply the placeholder mixin to input and textarea
+body{
+    form{
+        p{
+            margin-bottom: 0 !important;
+            label{
+                margin: 0 !important;
+            }
+            input, select, textarea{
+                margin-top: 0.5rem !important;
+            }
+        }
+    }
+    textarea{
+        min-height: 160px !important;
+    }
+    input, textarea {
+        @include placeholder;
+    }
+    input[type="text"], 
+    input[type="email"], 
+    input[type="url"], 
+    input[type="password"], 
+    input[type="search"], 
+    input[type="tel"], 
+    input[type="number"], 
+    input[type="range"], 
+    input[type="date"], 
+    input[type="month"], 
+    input[type="week"], 
+    input[type="time"], 
+    input[type="datetime"], 
+    input[type="datetime-local"], 
+    input[type="color"], 
+    textarea, select, .nice-select {
+        background-color: var(--white-color) !important;
+        border: 1px solid var(--border-color) !important;
+        color: var(--dark-color) !important;
+        padding: 13px 20px !important;
+        height: 48px !important;
+        border-radius: 0 !important;
+        //line-height: 47px !important;
+        font-size: 13px !important;
+        -webkit-transition: all 300ms linear 0ms !important;
+        -khtml-transition: all 300ms linear 0ms !important;
+        -moz-transition: all 300ms linear 0ms !important;
+        -ms-transition: all 300ms linear 0ms !important;
+        -o-transition: all 300ms linear 0ms !important;
+        transition: all 300ms linear 0ms !important;
+        -webkit-box-shadow: none !important;
+        -khtml-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        -ms-box-shadow: none !important;
+        -o-box-shadow: none !important;
+        box-shadow: none !important;
+        width: 100% !important;
+        outline: none !important;
+        &:focus, &:active{
+            border-color: transparent !important;
+            -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.15) !important;
+            -khtml-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.15) !important;
+            -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.15) !important;
+            -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.15) !important;
+            -o-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.15) !important;
+            box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.15) !important;
+            outline: 0 !important;
+            color: var(--dark-color) !important;
+        }
+    }
+    .nice-select{
+        line-height: 20px;
+        margin-bottom: 20px;
+        &::after{
+            width: 8px;
+            height: 8px;
+        }
+    }
+    select {
+        height: 50px;
+        margin-bottom: 7px;
+    }
+    
+    textarea {
+        line-height: normal;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        height: 104px;
+    }
+}
+

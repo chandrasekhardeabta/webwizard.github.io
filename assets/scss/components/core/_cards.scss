@@ -1,0 +1,62 @@
+.card {
+    width: 300px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &.card-team{
+        max-width: 100%;
+    }
+    &:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+    .card-image {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .card-content {
+        padding: 20px;
+        background: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffecd2);
+        //background: linear-gradient(to right, #fc226a 0%, #8c52ff 100%);
+        .card-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
+        .card-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--dark-color);
+            font-weight: 300;
+        }
+        .card-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: var(--dark-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            cursor: pointer;
+            pointer-events: none;
+            &:hover{
+                background-color: var(--secondary-color);
+                transform: translateY(-3px);
+                box-shadow: 0 5px 10px rgba(255, 154, 158, 0.4);
+            }
+        }
+    }
+}

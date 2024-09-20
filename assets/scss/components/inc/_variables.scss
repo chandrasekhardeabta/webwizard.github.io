@@ -1,0 +1,69 @@
+/*
+*
+* Contains all map & variables for the scss
+*
+*
+*/
+
+@import "./mixins";
+
+$default-font-family: Plus Jakarta Sans, sans-serif;
+
+// Variables
+$baseFontSize: 16px; // default base font size
+$minViewportSize: 360; // minimum viewport size
+$maxViewportSize: 2560; // maximum viewport size
+
+//Colors
+$colors: (
+  primary: #F16538,
+  primary-light: #FEF0EC,
+  primary-dark: #180802,
+  secondary: #6c757d,
+  success: #28a745,
+  danger: #EA5455,
+  danger-hover: #b61616,
+  warning: #ffc107,
+  info: #17a2b8,
+  light: #f8f9fa,
+  dark: #2A3546,
+  darkbg: #111312,
+  dark-mid: #A8AAAE,
+  white: #ffffff,
+  label: #5A6A85,
+  shadow: #A8AAAE,
+  card-border: #EBF1F6,
+  border: #DFE5EF,
+  border-dark: #7C8FAC
+);
+
+//@include define-colors($colors);
+
+//Header font size
+$header-font-sizes: (
+  h1: 38px,
+  h2: 32px,
+  h3: 26px,
+  h4: 22px,
+  h5: 18px,
+  h6: 15px
+);
+
+$font-sizes: (
+  10: 10px,
+  12: 12px,
+  14: 14px,
+  16: 16px,
+  18: 18px,
+  20: 20px,
+  22: 22px,
+  24: 24px
+);
+
+@include root-vars;
+
+
+
+
+
+
